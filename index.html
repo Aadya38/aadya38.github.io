@@ -9,33 +9,59 @@
       font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9fafc;
+      background: #f8f9fa;
       color: #333;
       line-height: 1.6;
     }
     header {
-      background: #007acc;
+      background: #4a90e2; /* softer blue (change here if you want another color) */
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
     header h1 {
       margin: 0;
+      font-size: 2.2em;
     }
-    main {
-      max-width: 800px;
+    header p {
+      margin: 5px 0;
+    }
+    header .email {
+      font-size: 0.95em;
+      margin-top: 8px;
+    }
+    .container {
+      max-width: 1000px;
       margin: 30px auto;
       padding: 20px;
+      display: flex;
+      gap: 30px;
+    }
+    .sidebar {
+      flex: 1;
+      max-width: 250px;
+      text-align: center;
+    }
+    .sidebar img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ddd;
+    }
+    .content {
+      flex: 3;
       background: white;
+      padding: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     h2 {
-      color: #007acc;
-      margin-top: 30px;
+      color: #4a90e2;
+      margin-top: 20px;
     }
     a {
-      color: #007acc;
+      color: #4a90e2;
       text-decoration: none;
       font-weight: 500;
     }
@@ -46,10 +72,6 @@
       font-weight: bold;
       color: #d35400;
     }
-    .contact {
-      margin-top: 10px;
-      font-size: 0.95em;
-    }
     .paper {
       margin-bottom: 20px;
     }
@@ -59,46 +81,52 @@
   <header>
     <h1>Aadya Ranjan</h1>
     <p>PhD Scholar, LTRC, IIIT Hyderabad</p>
-    <div class="contact">
-      📧 <a href="mailto:aadya.ranjan@research.iiit.ac.in">aadya.ranjan@research.iiit.ac.in</a> |
-      <a href="https://linkedin.com/in/aadya-ranjan" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/aadyaranjan" target="_blank">GitHub</a>
-    </div>
+    <p class="email">📧 <a href="mailto:aadya.ranjan@research.iiit.ac.in" style="color:white;">
+      aadya.ranjan@research.iiit.ac.in</a></p>
   </header>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Hi, I’m <strong>Aadya Ranjan</strong>. I’m a PhD scholar at the 
-      <em>Language Technologies Research Centre (LTRC), IIIT Hyderabad</em>, 
-      specializing in Computational Linguistics. My research focuses on 
-      <strong>cognitive modelling of spoken Hindi</strong>—exploring how 
-      language is processed and understood in real-time.</p>
+  <div class="container">
+    <!-- Sidebar with photo -->
+    <aside class="sidebar">
+      <!-- Replace profile.jpg with your photo file -->
+      <img src="profile.jpg" alt="Aadya Ranjan">
+    </aside>
 
-      <p>Outside of academics, I love to sing, dance, write, and express creativity in many forms.</p>
+    <!-- Main content -->
+    <main class="content">
+      <section>
+        <h2>About Me</h2>
+        <p>Hi, I’m <strong>Aadya Ranjan</strong>. I’m a PhD scholar at the 
+        <em>Language Technologies Research Centre (LTRC), IIIT Hyderabad</em>, 
+        specializing in Computational Linguistics. My research focuses on 
+        <strong>cognitive modelling of spoken Hindi</strong>—exploring how 
+        language is processed and understood in real-time.</p>
 
-      <p>I’ve also created a website that compiles Hindi verbs along with detailed linguistic information.  
-      👉 <a class="highlight" href="https://hindi-verb-checker-app-mkpxcutjvqnoudchq5qwjb.streamlit.app/" target="_blank">
-      Hindi Verb Checker (Click Here)</a></p>
-    </section>
+        <p>Outside of academics, I love to sing, dance, write, and express creativity in many forms.</p>
 
-    <section>
-      <h2>Research Papers</h2>
+        <p>I’ve also created a website that compiles Hindi verbs along with detailed linguistic information.  
+        👉 <a class="highlight" href="https://hindi-verb-checker-app-mkpxcutjvqnoudchq5qwjb.streamlit.app/" target="_blank">
+        Hindi Verb Checker (Click Here)</a></p>
+      </section>
 
-      <div class="paper">
-        <p><strong>A Systematic Exploration of Linguistic Phenomena in Spoken Hindi: Resource Creation and Hypothesis Testing</strong><br>
-        <em>Aadya Ranjan | Sidharth Ranjan | Rajakrishnan Rajkumar</em><br>
-        Proceedings of the 21st International Conference on Natural Language Processing (ICON)<br>
-        <a href="https://aclanthology.org/people/a/aadya-ranjan/" target="_blank">Read on ACL Anthology</a></p>
-      </div>
+      <section>
+        <h2>Research Papers</h2>
 
-      <div class="paper">
-        <p><strong>Psycholinguistic Features Predict Word Duration in Hindi Read Aloud Speech</strong><br>
-        <em>Rajakrishnan Rajkumar; Sneha Raman; Aadya Ranjan; Mildred Pereira; Nagesh Nayak; Preeti Rao</em><br>
-        ICASSP 2025 - IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)<br>
-        <a href="https://ieeexplore.ieee.org/document/10889644" target="_blank">Read on IEEE Xplore</a></p>
-      </div>
-    </section>
-  </main>
+        <div class="paper">
+          <p><strong>A Systematic Exploration of Linguistic Phenomena in Spoken Hindi: Resource Creation and Hypothesis Testing</strong><br>
+          <em>Aadya Ranjan | Sidharth Ranjan | Rajakrishnan Rajkumar</em><br>
+          Proceedings of the 21st International Conference on Natural Language Processing (ICON)<br>
+          <a href="https://aclanthology.org/people/a/aadya-ranjan/" target="_blank">Read on ACL Anthology</a></p>
+        </div>
+
+        <div class="paper">
+          <p><strong>Psycholinguistic Features Predict Word Duration in Hindi Read Aloud Speech</strong><br>
+          <em>Rajakrishnan Rajkumar; Sneha Raman; Aadya Ranjan; Mildred Pereira; Nagesh Nayak; Preeti Rao</em><br>
+          ICASSP 2025 - IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)<br>
+          <a href="https://ieeexplore.ieee.org/document/10889644" target="_blank">Read on IEEE Xplore</a></p>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
